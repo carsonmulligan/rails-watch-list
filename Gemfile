@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Gemfile
 gem 'autoprefixer-rails', '10.2.5'
+gem 'faker'
 gem 'font-awesome-sass', '~> 5.15'
 gem 'simple_form', github: 'heartcombo/simple_form'
 group :development, :test do

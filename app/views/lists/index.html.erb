@@ -1,0 +1,10 @@
+<h1>List#index</h1>
+<p>Find me in app/views/list/index.html.erb</p>
+
+<ul>
+  <% @lists.each do |list| %>
+      <li> <%= link_to list.name, list_path(list) %> </li>
+    <% end %>
+<button type="button" class="btn btn-primary">Create list bro</button>
+
+</ul>
