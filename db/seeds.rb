@@ -9,6 +9,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # db/seeds.rb
 
+# puts "Cleaning up database..."
+# Movie.destroy_all
+# puts "Database cleaned"
+
+# puts "Cleaning up database..."
+# List.destroy_all
+# puts "Database cleaned"
+
 Movie.create(title: 'Wonder Woman 1984',
              overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s', poster_url: 'https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg', rating: 6.9)
 Movie.create(title: 'The Shawshank Redemption',
@@ -21,8 +29,8 @@ puts "#{Movie.count} movies created"
 # 11.times do
 #   Movie.create(title: Faker::FunnyName.name, overview: Faker::GreekPhilosophers.quote, poster_url: "#{www.}Faker::Games::ClashOfClans.troop)
 # end
-14.times do
-  List.create(name: Faker::GreekPhilosophers.name)
+5.times do
+  List.create(name: Faker::Movies::StarWars.call_sign)
 end
 
 puts "#{List.count} lists created"

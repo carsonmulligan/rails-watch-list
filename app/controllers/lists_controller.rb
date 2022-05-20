@@ -15,9 +15,9 @@ class ListsController < ApplicationController
     end
   end
 
-  # def show
-  #   @list = List.find(params[:id])
-  # end
+  def show
+    @list = List.find(params[:id])
+  end
 
   def index
     @lists = List.all
