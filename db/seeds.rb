@@ -22,7 +22,7 @@ puts "#{Movie.count} movies created"
 #   Movie.create(title: Faker::FunnyName.name, overview: Faker::GreekPhilosophers.quote, poster_url: "#{www.}Faker::Games::ClashOfClans.troop)
 # end
 14.times do
-  List.create(name: Faker::FunnyName.name)
+  List.create(name: Faker::GreekPhilosophers.name)
 end
 
 puts "#{List.count} lists created"

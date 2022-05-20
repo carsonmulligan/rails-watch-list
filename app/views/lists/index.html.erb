@@ -3,7 +3,7 @@
 
 <ul>
   <% @lists.each do |list| %>
-      <li> <%= link_to list.name, list_path(list) %> </li>
+      <li> <%= link_to list.name, list_path(@lists) %> </li>
     <% end %>
 <button type="button" class="btn btn-primary">Create list bro</button>
 

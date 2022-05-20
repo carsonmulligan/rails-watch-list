@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 class ListsController < ApplicationController
-  #   def new
-
-  #     @list = List.new
-  #   end
+  # before_action set_list: [:show, :create]
+  def new
+    @list = List.new
+  end
 
   def create
-    @list = List.new(params_list)
+    @list = List.new(list_params)
     if @list.save
       redirect_to list_path(@list)
     else
@@ -15,16 +15,19 @@ class ListsController < ApplicationController
     end
   end
 
-  #   def show
-  #     @list = List.find(params[:id])
-  #   end
-  # #
+  # def show
+  #   @list = List.find(params[:id])
+  # end
+
   def index
     @lists = List.all
   end
-end
 
-private
-def params_list
-  params.require(:list).permit(:name)
+    # def set_list
+    #   @list = List.find(params[:id])
+    # end
+
+    # def list_params
+    #   params.require(:list).permit(:name)
+    # end
 end
