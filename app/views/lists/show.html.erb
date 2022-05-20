@@ -1,17 +1,23 @@
-<h1>List#show</h1>
-<p>Find me in app/views/list/show.html.erb</p>
+
+<div class="container">
+
+  <h1>List#show</h1>
+  <p>Find me in app/views/list/show.html.erb</p>
 
 
-<h2><%= @list.name %></h2>>
+  <h2><%= @list.name %></h2>>
 
-<ul>
-  <% @list.bookmarks.each do |bookmark| %>
-    <li> <%= bookmark.movie.title%></li>
-    <li> <%= bookmark.comment%></li>
-    <li> <%= bookmark.movie.overview%></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @list.bookmarks.each do |bookmark| %>
+      <li> <%= bookmark.movie.title%></li>
+      <li> <%= bookmark.comment%></li>
+      <li> <%= bookmark.movie.overview%></li>
+    <% end %>
+  </ul>
 
-<%= link_to "create boookmark", new_list_bookmark_path(@list) %>
+  <%= link_to "create boookmark", new_list_bookmark_path(@list) %>
 
-<%= link_to "go back", lists_path%>
+  <%= link_to "go back", lists_path%>
+
+  <%= link_to "delete this list", list_path(@list), method: :delete, class: "btn btn-cancel", data: { confirm: "Are you sure you want to delete this list?" } %>
+</div>
