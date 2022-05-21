@@ -32,29 +32,13 @@ puts "#{Movie.count} shipments created"
 # 11.times do
 #   Movie.create(title: Faker::FunnyName.name, overview: Faker::GreekPhilosophers.quote, poster_url: "#{www.}Faker::Games::ClashOfClans.troop)
 # end
-List.create(name: 'SFO-FRA // SO-BV-54067 // USRFID:67243')
-List.create(name: 'SFO-FRA // SO-BV-66097 // USRFID:57243')
-List.create(name: 'SFO-FRA // SO-BV-78097 // USRFID:47243')
-List.create(name: 'SFO-FRA // SO-BV-86097 // USRFID:37243')
+List.create(name: 'SO-BV-54067--SFO-FRA')
+List.create(name: 'SO-BV-66097--SFO-FRA')
+List.create(name: 'SO-BV-78097--SFO-FRA')
+List.create(name: 'SO-BV-86097--SFO-FRA')
+List.create(name: 'SO-BV-12067--SFO-CDG')
+List.create(name: 'SO-BV-13097--SFO-CDG')
+List.create(name: 'SO-BV-14097--SFO-LHR')
 
-List.create(name: 'SFO-CDG // SO-BV-12067 // USRFID:16243')
-List.create(name: 'SFO-CDG // SO-BV-13097 // USRFID:17243')
-List.create(name: 'SFO-CDG // SO-BV-14097 // USRFID:18243')
-List.create(name: 'SFO-CDG // SO-BV-15097 // USRFID:19243')
-
-List.create(name: 'SFO-LYS // SO-BV-20067 // USRFID:24243')
-List.create(name: 'SFO-LYS // SO-BV-21097 // USRFID:25243')
-List.create(name: 'SFO-LYS // SO-BV-22097 // USRFID:26243')
-List.create(name: 'SFO-LYS // SO-BV-23097 // USRFID:27243')
-
-List.create(name: 'SFO-ZRH // SO-BV-27067 // USRFID:31243')
-List.create(name: 'SFO-ZRH // SO-BV-28097 // USRFID:32243')
-List.create(name: 'SFO-ZRH // SO-BV-29097 // USRFID:33243')
-List.create(name: 'SFO-ZRH // SO-BV-30097 // USRFID:34243')
-
-List.create(name: 'SFO-HKG // SO-BV-35067 // USRFID:39243')
-List.create(name: 'SFO-HKG // SO-BV-36097 // USRFID:40243')
-List.create(name: 'SFO-HKG // SO-BV-37097 // USRFID:41243')
-List.create(name: 'SFO-HKG // SO-BV-38097 // USRFID:42243')
 
 puts "#{List.count} lists created"
