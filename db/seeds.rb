@@ -9,28 +9,31 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # db/seeds.rb
 
-# puts "Cleaning up database..."
-# Movie.destroy_all
-# puts "Database cleaned"
+puts "Cleaning up database..."
+Movie.destroy_all
+puts "Database cleaned"
 
-# puts "Cleaning up database..."
-# List.destroy_all
-# puts "Database cleaned"
+puts "Cleaning up database..."
+List.destroy_all
+puts "Database cleaned"
 
-Movie.create(title: 'Wonder Woman 1984',
-             overview: 'Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s', poster_url: 'https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg', rating: 6.9)
-Movie.create(title: 'The Shawshank Redemption',
-             overview: 'Framed in the 1940s for double murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison', poster_url: 'https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg', rating: 8.7)
-Movie.create(title: 'Titanic',
-             overview: '101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic.', poster_url: 'https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg', rating: 7.9)
-Movie.create(title: "Ocean's Eight",
-             overview: 'Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.', poster_url: 'https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg', rating: 7.0)
-puts "#{Movie.count} movies created"
+Movie.create(title: 'SFO-FRA // SO-BV-54067 // USRFID:67243',
+             overview: '10 /pc @ 1152 KG // 10 @ 41 x 27 x 42" // ChaojiMicro --> JIM AG // MAWB: 001-000095642 // SFO-FRA // SO-BV-54067 // USRFID:67243', rating: 6.9)
+Movie.create(title: 'SFO-FRA // SO-BV-66097 // USRFID:57243',
+             overview: '10 /pc @ 1152 KG // 10 @ 41 x 27 x 42" // ChaojiMicro --> JIM AG // MAWB: 001-000095642 // SFO-FRA // SO-BV-66097 // USRFID:57243', poster_url: 'https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg', rating: 8.7)
+Movie.create(title: 'SFO-FRA // SO-BV-78097 // USRFID:47243',
+             overview: '10 /pc @ 1152 KG // 10 @ 41 x 27 x 42" // ChaojiMicro --> JIM AG // MAWB: 001-000095642 // SFO-FRA // SO-BV-78097 // USRFID:47243', poster_url: 'https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg', rating: 7.9)
+Movie.create(title: "SFO-FRA // SO-BV-86097 // USRFID:37243",
+             overview: '10 /pc @ 1152 KG // 10 @ 41 x 27 x 42" // ChaojiMicro --> JIM AG // MAWB: 001-000095642 // SO-BV-86097 // USRFID:37243', poster_url: 'https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg', rating: 7.0)
+puts "#{Movie.count} shipments created"
+
+# Movie = Individual Shipment
+# List =
 # 11.times do
 #   Movie.create(title: Faker::FunnyName.name, overview: Faker::GreekPhilosophers.quote, poster_url: "#{www.}Faker::Games::ClashOfClans.troop)
 # end
 5.times do
-  List.create(name: Faker::Movies::StarWars.call_sign)
+  List.create(name: Faker::Nation.capital_city)
 end
 
 puts "#{List.count} lists created"
